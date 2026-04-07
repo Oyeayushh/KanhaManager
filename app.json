@@ -1,0 +1,27 @@
+{
+  "name": "Kanha Manager",
+  "description": "Telegram Group Management Bot like Miss Rose",
+  "logo": "https://telegra.ph/file/1d7f9c9a6d1d8e2f2b9c3.jpg",
+  "keywords": ["telegram", "bot", "missrose", "group", "manager"],
+  "repository": "https://github.com/yourusername/yourrepo",
+  "success_url": "https://t.me/your_bot_username",
+  "env": {
+    "TOKEN": {
+      "description": "Bot Token from BotFather",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "Your Telegram User ID",
+      "required": true
+    },
+    "MONGO_DB_URI": {
+      "description": "MongoDB Connection URL",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
